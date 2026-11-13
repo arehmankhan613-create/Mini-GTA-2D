@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <title>Mini GTA - Open World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🏙️ MINI GTA</h1>
+    <p class="subtitle">Open World City Adventure</p>
+  </header>
+
+  <section class="stats">
+    <div>❤️ Health: <b id="health">100</b></div>
+    <div>💰 Money: $<b id="money">0</b></div>
+    <div>⭐ Wanted: <b id="wanted">0</b></div>
+  </section>
+
+  <main>
+    <canvas id="game" width="600" height="600"></canvas>
+  </main>
+
+  <section class="mission">
+    <h3>🎯 Mission</h3>
+    <p id="mission">Collect 5 money bags around the city!</p>
+    <p id="vehicle">🚶 On Foot</p>
+    <p id="message">Explore the city and collect money!</p>
+  </section>
+
+  <section class="controls">
+    <div class="movement">
+      <button class="up" data-key="up">⬆️</button>
+      <div class="middle">
+        <button data-key="left">⬅️</button>
+        <button data-key="down">⬇️</button>
+        <button data-key="right">➡️</button>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="actionBtn">🚗 Enter / Exit</button>
+      <button id="restartBtn">🔄 Restart</button>
+    </div>
+  </section>
+
+  <p class="help">
+    Keyboard: WASD / Arrow Keys | E: Enter or Exit Car
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
