@@ -1,0 +1,162 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101820;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 15px;
+  user-select: none;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #00ff88;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.stats {
+  max-width: 600px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #1d2b36;
+  padding: 13px 5px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.stats b {
+  color: #00ff88;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border: 3px solid #00ff88;
+  border-radius: 8px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #527c45;
+}
+
+.mission {
+  max-width: 600px;
+  margin: 15px auto;
+  background: #1d2b36;
+  padding: 14px;
+  border-radius: 10px;
+  line-height: 1.8;
+}
+
+.mission h3 {
+  color: #00ff88;
+}
+
+#message {
+  color: #ffd54f;
+  font-size: 14px;
+}
+
+.controls {
+  max-width: 600px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+button {
+  background: #00e887;
+  color: #101820;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  touch-action: none;
+}
+
+button:active {
+  transform: scale(.94);
+  background: #00c975;
+}
+
+.movement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.middle {
+  display: flex;
+  gap: 5px;
+}
+
+.movement button {
+  min-width: 53px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.actions button {
+  font-size: 14px;
+}
+
+#restartBtn {
+  background: #ffca28;
+}
+
+.help {
+  color: #aaa;
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .stats {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
